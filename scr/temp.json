@@ -1,0 +1,230 @@
+{
+  "data": {"error": "NOT NULL constraint failed: order_order.couponcode"},
+  "status": 500,
+  "headers": {
+    "allow": "OPTIONS, POST",
+    "connection": "keep-alive",
+    "content-length": "63",
+    "content-type": "application/json",
+    "cross-origin-opener-policy": "same-origin",
+    "date": "Sat, 06 Apr 2024 11:50:14 GMT",
+    "referrer-policy": "same-origin",
+    "server": "nginx/1.18.0 (Ubuntu)",
+    "vary": "Accept",
+    "x-content-type-options": "nosniff",
+    "x-frame-options": "DENY"
+  },
+  "config": {
+    "transitional": {
+      "silentJSONParsing": true,
+      "forcedJSONParsing": true,
+      "clarifyTimeoutError": false
+    },
+    "adapter": ["xhr", "http"],
+    "transformRequest": [null],
+    "transformResponse": [null],
+    "timeout": 0,
+    "xsrfCookieName": "XSRF-TOKEN",
+    "xsrfHeaderName": "X-XSRF-TOKEN",
+    "maxContentLength": -1,
+    "maxBodyLength": -1,
+    "env": {},
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+      "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNzAwMTg5LCJpYXQiOjE3MTI0MDQxODksImp0aSI6ImNiMGE0MDgxMGYzOTQ2NTg4OTRkMWYwNTFlMTI1ZmJkIiwidXNlcl9pZCI6NX0.DM32OUJRct_hSPkO7ckgm5RWFHR_lVuLoidvDafI8_Q"
+    },
+    "method": "post",
+    "url": "http://20.163.175.115/api/create_order/",
+    "data": "{\"user_id\":\"5\",\"total_amount\":222.55,\"newname\":\"Rmlrhjf\",\"phone\":\"6846846845\",\"city\":\"jwhfebjhb\",\"address\":\"kwrgf\",\"zip_code\":\"741258\",\"state\":\"jhwvbedjh\",\"country\":\"kwefjf\",\"delivery_time\":\"1 to 3 Hours\",\"delivery_price\":null,\"discounted_price\":0,\"previous_price\":222.55}"
+  },
+  "request": {
+    "UNSENT": 0,
+    "OPENED": 1,
+    "HEADERS_RECEIVED": 2,
+    "LOADING": 3,
+    "DONE": 4,
+    "readyState": 4,
+    "status": 500,
+    "timeout": 0,
+    "withCredentials": true,
+    "upload": {},
+    "_aborted": false,
+    "_hasError": false,
+    "_method": "POST",
+    "_perfKey": "network_XMLHttpRequest_http://20.163.175.115/api/create_order/",
+    "_response": "{\"error\": \"NOT NULL constraint failed: order_order.couponcode\"}",
+    "_url": "http://20.163.175.115/api/create_order/",
+    "_timedOut": false,
+    "_trackingName": "unknown",
+    "_incrementalEvents": false,
+    "_performanceLogger": {
+      "_timespans": {
+        "network_XMLHttpRequest_http://10.0.2.2:8081/symbolicate": {
+          "startTime": 3008317.9419,
+          "endTime": 3008564.0276,
+          "totalTime": 246.08570000017062
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/five/categories/": {
+          "startTime": 3008366.0276,
+          "endTime": 3009123.7842,
+          "totalTime": 757.7565999999642
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/most_popular_five/": {
+          "startTime": 3008370.293,
+          "endTime": 3009099.8829,
+          "totalTime": 729.5899000000209
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/recommended_five/": {
+          "startTime": 3008371.5451,
+          "endTime": 3009119.0368,
+          "totalTime": 747.491699999664
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/banners/": {
+          "startTime": 3008372.6403,
+          "endTime": 3009119.6506,
+          "totalTime": 747.0102999997325
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/adds/": {
+          "startTime": 3008373.8441,
+          "endTime": 3009119.3406,
+          "totalTime": 745.4965000003576
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/get_total_price/?user_id=": {
+          "startTime": 3008438.2025,
+          "endTime": 3009506.9925,
+          "totalTime": 1068.7900000000373
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/get_cart/?user_id=": {
+          "startTime": 3008439.7057,
+          "endTime": 3009505.9885,
+          "totalTime": 1066.282800000161
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/get_cart/?user_id=17": {
+          "startTime": 3008571.2821,
+          "endTime": 3009506.4281,
+          "totalTime": 935.1460000001825
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/get_total_price/?user_id=17": {
+          "startTime": 3008601.4367,
+          "endTime": 3009761.6669,
+          "totalTime": 1160.2302000001073
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/profile/?user_id=17": {
+          "startTime": 3015090.9627,
+          "endTime": 3015446.6512,
+          "totalTime": 355.6885000001639
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/register/": {
+          "startTime": 3778874.6081,
+          "endTime": 3779861.7935,
+          "totalTime": 987.1854000003077
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/login/": {
+          "startTime": 3817441.1128,
+          "endTime": 3818057.0378,
+          "totalTime": 615.9250000002794
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/add_to_cart/": {
+          "startTime": 4150239.221,
+          "endTime": 4150555.4932,
+          "totalTime": 316.2722000000067
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/categories/": {
+          "startTime": 4196109.0545,
+          "endTime": 4196756.7605,
+          "totalTime": 647.7060000002384
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/banners/?category_id=7": {
+          "startTime": 4200941.3548,
+          "endTime": 4201343.0627,
+          "totalTime": 401.7078999998048
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/category/product-all/?category_id=7": {
+          "startTime": 4200953.9081,
+          "endTime": 4201343.5089,
+          "totalTime": 389.60080000013113
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/get_cart/?user_id=5": {
+          "startTime": 5226045.8361,
+          "endTime": 5228146.6187,
+          "totalTime": 2100.7826000005007
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/get_total_price/?user_id=5": {
+          "startTime": 5226050.4773,
+          "endTime": 5228150.3397,
+          "totalTime": 2099.8623999999836
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/profile/?user_id=5": {
+          "startTime": 5510687.7523,
+          "endTime": 5511059.5033,
+          "totalTime": 371.7510000001639
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/addresses/?user_id=5": {
+          "startTime": 6296547.2385,
+          "endTime": 6297107.6894,
+          "totalTime": 560.4508999995887
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/addresses/": {
+          "startTime": 6326733.4145,
+          "endTime": 6327204.5274,
+          "totalTime": 471.11290000006557
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/wallet/?user_id=5": {
+          "startTime": 6338310.4301,
+          "endTime": 6338988.4151,
+          "totalTime": 677.984999999404
+        },
+        "network_XMLHttpRequest_http://20.163.175.115/api/create_order/": {
+          "startTime": 6397773.2701,
+          "endTime": 6399610.2111,
+          "totalTime": 1836.9409999996424
+        }
+      },
+      "_extras": {},
+      "_points": {
+        "initializeCore_start": 3005204.3109,
+        "initializeCore_end": 3005524.0783
+      },
+      "_pointExtras": {},
+      "_closed": false,
+      "_isGlobalLogger": true
+    },
+    "responseHeaders": {
+      "Vary": "Accept",
+      "Date": "Sat, 06 Apr 2024 11:50:14 GMT",
+      "Content-Length": "63",
+      "Cross-Origin-Opener-Policy": "same-origin",
+      "Allow": "OPTIONS, POST",
+      "X-Content-Type-Options": "nosniff",
+      "Connection": "keep-alive",
+      "Referrer-Policy": "same-origin",
+      "Server": "nginx/1.18.0 (Ubuntu)",
+      "Content-Type": "application/json",
+      "X-Frame-Options": "DENY"
+    },
+    "_requestId": null,
+    "_headers": {
+      "accept": "application/json, text/plain, */*",
+      "content-type": "application/json",
+      "authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNzAwMTg5LCJpYXQiOjE3MTI0MDQxODksImp0aSI6ImNiMGE0MDgxMGYzOTQ2NTg4OTRkMWYwNTFlMTI1ZmJkIiwidXNlcl9pZCI6NX0.DM32OUJRct_hSPkO7ckgm5RWFHR_lVuLoidvDafI8_Q"
+    },
+    "_responseType": "",
+    "_sent": true,
+    "_lowerCaseResponseHeaders": {
+      "vary": "Accept",
+      "date": "Sat, 06 Apr 2024 11:50:14 GMT",
+      "content-length": "63",
+      "cross-origin-opener-policy": "same-origin",
+      "allow": "OPTIONS, POST",
+      "x-content-type-options": "nosniff",
+      "connection": "keep-alive",
+      "referrer-policy": "same-origin",
+      "server": "nginx/1.18.0 (Ubuntu)",
+      "content-type": "application/json",
+      "x-frame-options": "DENY"
+    },
+    "_subscriptions": [],
+    "responseURL": "http://20.163.175.115/api/create_order/"
+  }
+}
