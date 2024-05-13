@@ -47,9 +47,7 @@ const isOutOfStock = stock === 0;
       <Text style={styles.text} numberOfLines={1}>
         {item.title}
       </Text>
-      <Text style={styles.text1}>
-        {item.item_quantity} {item.item_measurement}
-      </Text>
+        
      
         <View>
           <Text style={styles.t2}>₹{item.item_new_price}</Text>
@@ -188,7 +186,7 @@ const MostPopular = ({navigation, route}) => {
           </TouchableOpacity>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate('Cart')}>
+            onPress={() => navigation.replace('Bottom',{screen:'Cart'})}>
             <Text style={styles.t4}>View Cart</Text>
             <AntDesign name="arrowright" size={20} color={'#FFB400'} />
           </TouchableOpacity>
@@ -229,7 +227,7 @@ const styles = StyleSheet.create({
   b1: {
     backgroundColor: 'white',
     width: Dimensions.get('window').width * 0.433,
-    height: Dimensions.get('window').height * 0.35,
+    height: Dimensions.get('window').height * 0.33,
     marginTop: 10,
     elevation: 10,
     borderRadius: 13,

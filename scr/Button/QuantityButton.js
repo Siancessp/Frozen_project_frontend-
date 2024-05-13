@@ -109,7 +109,7 @@ const QuantityButton = ({product, onPressAddToCart, getTotalPrice}) => {
         flex: 1,
         position: 'absolute',
         alignSelf: 'center',
-        top: Dimensions.get('window').height * 0.333,
+        top: Dimensions.get('window').height * 0.305,
       }}>
       {quantity > 0 ? (
         <View

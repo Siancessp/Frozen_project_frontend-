@@ -63,9 +63,7 @@ const FiveRecommanded = ({onPressAddToCart, getTotalPrice}) => {
       <Text style={styles.text} numberOfLines={1}>
         {item.title}
       </Text>
-      <Text style={styles.text1}>
-        {item.item_quantity} {item.item_measurement}
-      </Text>
+        
         <View>
           <Text style={styles.t1}>₹{item.item_new_price}</Text>
           <View style={{flexDirection: 'row', alignItems:"center"}}>
@@ -94,7 +92,7 @@ const styles = StyleSheet.create({
     borderRadius: 13,
     marginRight:20, marginBottom:35,
     marginLeft:3,
-    height: Dimensions.get('window').height * 0.355,
+    height: Dimensions.get('window').height * 0.33,
     paddingHorizontal:8
     
   },

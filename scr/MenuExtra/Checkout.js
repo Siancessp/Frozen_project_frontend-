@@ -16,8 +16,6 @@ import React, {useEffect, useState} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import Feather from 'react-native-vector-icons/Feather';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
-import Address from '../MenuExtra/Address';
-import Pickup from '../MenuExtra/Pickup';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import api from '../utills/api';
 import ListSkeleton from '../utills/ListSkeleton';

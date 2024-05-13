@@ -57,7 +57,7 @@ const Menu = ({navigation}) => {
   };
 
   return (
-    <View
+    <ScrollView
       style={{
         height: Dimensions.get('window').height,
         backgroundColor: 'white',
@@ -77,7 +77,8 @@ const Menu = ({navigation}) => {
         numColumns={3}
         renderItem={({item}) => <MenuItems item={item} />}
       />
-    </View>
+      <View style={{marginBottom:Dimensions.get("window").height*0.13}}/>
+    </ScrollView>
   );
 };
 

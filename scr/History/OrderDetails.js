@@ -51,7 +51,7 @@ const OrderDetails = ({route}) => {
       // console.log("pd", response.data.products);
       setProducts(response.data.products)
     } catch (error) {
-      console.log('Error fetching addresses:', error);
+      console.log('Error fetching :', error);
     }
   };
 
@@ -59,26 +59,6 @@ const OrderDetails = ({route}) => {
     getHistory();
   }, []);
 
-  const items = [
-    {
-      id: 1,
-      name: 'Momo fried',
-      quantity: 1,
-      price: 250,
-    },
-    {
-      id: 2,
-      name: 'Momo steamed',
-      quantity: 1,
-      price: 200,
-    },
-    {
-      id: 3,
-      name: 'Chocolate Momo',
-      quantity: 1,
-      price: 400,
-    },
-  ];
 
   const [pdf, setPdf] = useState();
 

@@ -230,7 +230,7 @@ const Home = () => {
                   size={24}
                   color={'white'}
                 />
-                <Text style={styles.t3}>22h 02m 06s remaining</Text>
+                <Text style={styles.t3}>Order Before 07:00 PM</Text>
               </View>
             </View>
             <Image
@@ -303,7 +303,7 @@ const Home = () => {
           <View style={{width:Dimensions.get("window").width*0.4, alignItems:"flex-end"}}>
           <TouchableOpacity
             style={styles.button}
-            onPress={() => navigation.navigate('Cart')}>
+            onPress={() => navigation.replace('Bottom',{screen:'Cart'})}>
             <Text style={styles.t6}>View Cart</Text>
             <AntDesign name="arrowright" size={20} color={'#FFB400'} />
           </TouchableOpacity>

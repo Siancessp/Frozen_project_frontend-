@@ -62,7 +62,7 @@ const Signup = ({navigation}) => {
       </TouchableOpacity>
       
       <View style={{flexDirection:"row", justifyContent:"center", marginTop:20, alignItems:"center"}}>
-      <Text>Don't you have any account?</Text>
+      <Text>Already have an account?</Text>
       <TouchableOpacity style={styles.button2} onPress={()=> navigation.goBack()}>
         <Text style={styles.buttonText2}>SIGN IN</Text>
       </TouchableOpacity>

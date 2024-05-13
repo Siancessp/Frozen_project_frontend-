@@ -73,7 +73,7 @@ const Edit = () => {
     try {
       const uid = await AsyncStorage.getItem('id');
       console.log(uid);
-  
+
       const formData = new FormData();
       if (profileImage) {
         formData.append('profile_photo', {
@@ -92,7 +92,7 @@ const Edit = () => {
         formData.append('bio', location);
       }
       formData.append('user_id', uid);
-  
+
       const response = await api.postFormdata('profile/', formData);
       getProfile();
       navigation.replace('Bottom', {screen: 'Profile'});
@@ -102,7 +102,6 @@ const Edit = () => {
     }
     setLoading(false);
   };
-  
 
   const toggleModal = () => {
     setModalVisible(!modalVisible);
@@ -155,7 +154,7 @@ const Edit = () => {
           }}>
           Edit Profile
         </Text>
-        <Text>       </Text>
+        <Text>     </Text>
       </View>
       <View style={styles.b1}>
         <TouchableOpacity style={{alignItems: 'center'}} onPress={pickImage}>
@@ -164,17 +163,23 @@ const Edit = () => {
               source={{uri: profileImage}}
               style={{width: 100, aspectRatio: 1, borderRadius: 100}}
             />
-          ) : (
+          ) : photo ? (
             <Image
               source={{
-                uri:
-                  'http://20.163.175.115/' +
-                  (photo ||
-                    'https://frozenwala.com/frontend/public/images/logo.jpg'),
+                uri: 'http://20.163.175.115/' + photo,
               }}
               style={{width: 100, aspectRatio: 1, borderRadius: 100}}
             />
+          ) : (
+            <View style={styles.imgBox} >
+            <Image
+              source={require('../../assets/man.png')}
+              style={{height: '100%', width: '100%', borderRadius: 100}}
+            />
+            </View>
+          
           )}
+
           <Feather
             name="edit-2"
             size={16}
@@ -323,6 +328,10 @@ const styles = StyleSheet.create({
     alignSelf: 'center',
     marginTop: 20,
     alignItems: 'center',
+  },
+  imgBox: {
+    width: 100,
+    aspectRatio: 1,
   },
   t1: {
     color: 'black',

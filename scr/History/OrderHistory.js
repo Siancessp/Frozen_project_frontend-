@@ -6,6 +6,7 @@ import {
   TouchableOpacity,
   Dimensions,
   ScrollView,
+  ImageBackground,
 } from 'react-native';
 import React, {useEffect, useState} from 'react';
 import AntDesign from 'react-native-vector-icons/AntDesign';
@@ -50,6 +51,12 @@ const OrderHistory = () => {
         <Text style={styles.t1}>Order History</Text>
         <Text></Text>
       </View>
+      {history.length === 0 ? ( // Check if cart is empty
+          <View style={{height:Dimensions.get("window").height}}>
+          <ImageBackground source={require("../../assets/Cart.png")} style={{height:"100%"}}/>
+
+          </View>
+        ) :(
       <ScrollView showsVerticalScrollIndicator={false}>
         {history.map(items => {
           let statusText, color, icon;
@@ -162,6 +169,7 @@ const OrderHistory = () => {
           );
         })}
       </ScrollView>
+        )}
     </View>
   );
 };

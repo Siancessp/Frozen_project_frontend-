@@ -61,9 +61,7 @@ const FiveMostPopular = ({onPressAddToCart,getTotalPrice}) => {
       <Text style={styles.text} numberOfLines={1}>
         {item.title}
       </Text>
-      <Text style={styles.text1}>
-        {item.item_quantity} {item.item_measurement}
-      </Text>
+        
         <View>
           <Text style={styles.t1}>₹{item.item_new_price}</Text>
           <View style={{flexDirection: 'row', alignItems:"center"}}>
@@ -86,7 +84,7 @@ const styles = StyleSheet.create({
   b1: {
     backgroundColor: 'white',
     width: Dimensions.get('window').width * 0.433,
-    height: Dimensions.get('window').height * 0.35,
+    height: Dimensions.get('window').height * 0.33,
     marginTop: 2,
     elevation: 10,
     shadowRadius:13,
